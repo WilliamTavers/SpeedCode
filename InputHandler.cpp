@@ -19,11 +19,11 @@ void InputHandler::parseInput() {
     // Step 1: Parse the first line
     std::string line;
     std::getline(inputStream, line);
-    parseDimensions(line);  // Ensure this matches the header declaration
+    parseDimensions(line);  
 
     // Step 2: Parse the tag table
-    parseTagTable(inputStream);  // Ensure this matches the header declaration
-
+    parseTagTable(inputStream); 
+    
     // Step 3: Parse block data
     parseBlockData(inputStream);
 }
